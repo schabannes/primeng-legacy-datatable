@@ -6,7 +6,7 @@
 
 # PrimeNG
 
-Deperecated DataTable Components for Angular (from version 7.1.3)
+Deprecated DataTable Components for Angular (from version 7.1.3)
 
 See [PrimeNG homepage](http://www.primefaces.org/primeng) for other primeng components.
 
