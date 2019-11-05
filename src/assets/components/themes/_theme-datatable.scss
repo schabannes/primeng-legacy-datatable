@@ -1,0 +1,78 @@
+/* DataTable  */
+.ui-datatable {
+    .ui-datatable-header,
+    .ui-datatable-caption,
+    .ui-datatable-footer {
+        background-color: $sectionBgColor;
+        color: $sectionTextColor;
+        border: 1px solid $sectionBorderColor;
+        padding: 0.571em 1em;
+        font-weight: 700;
+    }
+    
+    .ui-datatable-thead > tr > th,
+    .ui-datatable-tfoot > tr > td {
+        padding: 0.571em 0.857em;
+        border: 1px solid $headerFooterBorderColor;
+        font-weight: 700;
+        color: $headerFooterTextColor;
+        background-color: $headerFooterBgColor;
+    }
+
+    .ui-rowgroup-header a {
+        color: $sectionTextColor;
+    }
+
+    .ui-row-toggler {
+        color: $iconColor;
+    }
+
+    .ui-datatable-thead > tr > th {        
+        &.ui-sortable-column:not(.ui-state-active) .ui-sortable-column-icon {
+            color: $iconColor;
+        }
+
+        &.ui-sortable-column:not(.ui-state-active):hover {
+            background-color: $hoverBgColor;
+            color: $hoverTextColor;
+
+            .ui-sortable-column-icon {
+                color: $cellTextColor;
+            }
+        }
+                        
+        &.ui-state-active {
+            background: $activeBgColor;
+            color: $activeTextColor;
+        }
+    }
+    
+    .ui-datatable-data > tr {
+        background-color: $cellBgColor;
+        color: $cellTextColor;
+
+        > td {
+            padding: 0.571em 0.857em;
+            border: 1px solid $cellBorderColor;
+        }
+        
+        &.ui-state-highlight {
+            background-color: $activeBgColor;
+            color: $activeTextColor;
+        }
+        
+        &.ui-state-highlight  a {
+            color: $activeTextColor;
+        }
+        
+        &.ui-datatable-even:not(.ui-state-highlight) {
+            background-color: $cellAlternateBgColor;
+        }
+    }
+
+    .ui-datatable-data.ui-datatable-hoverable-rows > tr:not(.ui-state-highlight):hover {
+        cursor: pointer;
+        background-color: $hoverBgColor;
+        color: $hoverTextColor;
+    }
+}

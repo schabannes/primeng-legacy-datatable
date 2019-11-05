@@ -1,0 +1,37 @@
+<div class="layout-wrapper">
+    <div id="layout-topbar">
+        <a href="#" class="logo" [routerLink]="['/']">
+            <img alt="logo" src="assets/showcase/images/logo.png" />
+        </a>
+
+        <ul class="topbar-menu">
+            <li class="topbar-menu-themes">
+                <a>THEMES</a>
+                <ul>
+                    <li><a href="#" (click)="changeTheme($event, 'nova-light', false)"><img src="assets/showcase/images/themeswitcher-nova-light.png" alt="Nova Light"><span class="ui-text">Nova Light</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'nova-dark', false)"><img src="assets/showcase/images/themeswitcher-nova-dark.png" alt="Nova Dark"><span class="ui-text">Nova Dark</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'nova-colored', false)"><img src="assets/showcase/images/themeswitcher-nova-colored.png" alt="Nova Colored"><span class="ui-text">Nova Colored</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'luna-amber', true)"><img src="assets/showcase/images/themeswitcher-luna-amber.png" alt="Luna Amber"><span class="ui-text">Luna Amber</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'luna-blue', true)"><img src="assets/showcase/images/themeswitcher-luna-blue.png" alt="Luna Blue"><span class="ui-text">Luna Blue</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'luna-green', true)"><img src="assets/showcase/images/themeswitcher-luna-green.png" alt="Luna Green"><span class="ui-text">Luna Green</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'luna-pink', true)"><img src="assets/showcase/images/themeswitcher-luna-pink.png" alt="Luna Pink"><span class="ui-text">Luna Pink</span></a></li>
+                    <li><a href="#" (click)="changeTheme($event, 'rhea', false)"><img src="assets/showcase/images/themeswitcher-rhea.png" alt="Luna Pink"><span class="ui-text">Rhea</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="layout-content">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+
+        <div class="content-section layout-footer clearfix">
+            <span>PrimeNG 7.1.3</span>
+            <div class="footer-links">
+                <a href="https://github.com/primefaces/primeng"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/prime_ng"><i class="fa fa-twitter"></i></a>
+            <div>
+        </div>
+    </div>
+</div>

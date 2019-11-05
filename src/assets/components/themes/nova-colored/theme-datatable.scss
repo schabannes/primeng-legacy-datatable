@@ -1,0 +1,21 @@
+$cellBgColor: #ffffff;
+$cellAlternateBgColor: #f9f9f9;
+$cellBorderColor: #c8c8c8;
+$cellTextColor: #333333;
+
+$hoverBgColor: #eaeaea;
+$hoverTextColor: $cellTextColor;
+$activeBgColor: #e02365;
+$activeTextColor: #ffffff;
+
+$headerFooterBgColor: #f4f4f4;
+$headerFooterTextColor: $cellTextColor;
+$headerFooterBorderColor: $cellBorderColor;
+
+$sectionBgColor: #007ad9;
+$sectionTextColor: #ffffff;
+$sectionBorderColor: #007ad9;
+
+$iconColor: #737373;
+
+@import '../theme-datatable';
