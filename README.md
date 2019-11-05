@@ -1,8 +1,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Join the chat at https://gitter.im/primefaces/primeng](https://badges.gitter.im/primefaces/primeng.svg)](https://gitter.im/primefaces/primeng?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![npm version](https://badge.fury.io/js/primeng.svg)](https://badge.fury.io/js/primeng)
-[![Build Status](https://travis-ci.org/primefaces/primeng.svg?branch=master)](https://travis-ci.org/primefaces/primeng)
+[![npm version](https://badge.fury.io/js/primeng.svg)](https://badge.fury.io/js/primeng-legacy-datatable)
+[![primeng version](https://badge.fury.io/js/primeng.svg)](https://badge.fury.io/js/primeng)
 
 # PrimeNG
 
@@ -35,6 +34,7 @@ PrimeNG is available at NPM, if you have an existing application run the followi
 
 ```
 npm install primeng --save
+npm install primeng-legacy-datatable --save
 npm install primeicons --save
 ```
 
@@ -45,7 +45,7 @@ Add PrimeNG and PrimeIcons as a dependencies.
 ```
 "dependencies": {
   //...
-  "primeng": "^7.0.0",
+  "primeng": "^8.0.0",
   "primeicons": "^1.0.0"
 },
 ```
@@ -54,7 +54,8 @@ Configure required styles at the styles section, example below uses the Nova Lig
 
 ```
 "styles": [
-  "node_modules/primeng/resources/themes/omega/theme.css",
+  "node_modules/primeng/resources/themes/nova-light/theme.css",
+  "node_modules/primeng-legacy-datatable/resources/themes/nova-light/theme-datatable.css",
   "node_modules/primeng/resources/primeng.min.css",
   "node_modules/primeicons/primeicons.css",
   //...
