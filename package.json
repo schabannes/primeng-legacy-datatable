@@ -15,7 +15,7 @@
     "url": "https://github.com/schabannes/primeng-legacy-datatable.git"
   },
   "dependencies": {
-    "@angular/core": "~8.0.0",
+    "@angular/core": "~11.0.5",
     "@angular/common": "~8.0.0",
     "@angular/forms": "~8.0.0",
     "rxjs": "~6.4.0",
